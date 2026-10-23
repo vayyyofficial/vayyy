@@ -28,6 +28,7 @@ import {
   QuoteModal
 } from './Modals';
 import { LoadingScreen, ParticlesBackground, TypewriterText } from './Effects';
+import { renderSocialIcon } from './SocialIcons';
 
 export const App: React.FC = () => {
   const [lang, setLang] = useState<Language>(() => {
@@ -519,27 +520,27 @@ export const App: React.FC = () => {
         {/* Footer */}
         <footer className="web-footer">
           <div className="divider-line" />
-          <div className="social-container">
+          <nav aria-label="Social media links" className="social-container">
             {SOCIAL_LINKS.map((link) => (
               <a
                 key={link.name}
                 href={link.url}
-                className="social-circle anim-hover"
+                className="social-circle"
                 target="_blank"
                 rel="noopener noreferrer"
                 title={link.name}
-                aria-label={link.name}
+                aria-label={`Visit my ${link.name} profile`}
               >
-                <img src={link.icon} alt={`${link.name} Icon`} className="social-minimal-icon" />
+                {renderSocialIcon(link.icon || link.name, { className: 'social-svg-icon' })}
               </a>
             ))}
-          </div>
+          </nav>
 
-          <div id="digital-clock">{wibTime}</div>
+          <div id="digital-clock" aria-label="Current time in Western Indonesia Time">{wibTime}</div>
 
           <div className="footer-address">
-            <MapPin size={14} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 6 }} />
-            {PERSONAL_PROFILE.location}
+            <MapPin size={15} className="footer-pin-icon" aria-hidden="true" />
+            <span>{PERSONAL_PROFILE.location}</span>
           </div>
 
           <div className="footer-copyright">

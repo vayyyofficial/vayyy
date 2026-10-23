@@ -65,7 +65,7 @@ export const PERSONAL_PROFILE: PersonalProfile = {
   birthDate: new Date(2011, 0, 25), // January 25, 2011
   timezone: 'Asia/Jakarta',
   storeUrl: 'https://vayyy-store.vercel.app/',
-  location: 'Kab. Lumajang, Jawa Timur, Indonesia'
+  location: 'Malang City, East Java, Indonesia'
 };
 
 export const I18N_CONTENT = {
@@ -269,32 +269,32 @@ export const SOCIAL_LINKS: SocialLinkItem[] = [
   {
     name: 'GitHub',
     url: 'https://github.com/vayyyofficial',
-    icon: 'https://api.iconify.design/fa6-brands:github.svg?color=%23aaaaaa'
+    icon: 'github'
   },
   {
     name: 'Discord',
     url: 'https://discord.gg/KVMd9jA8SY',
-    icon: 'https://api.iconify.design/fa6-brands:discord.svg?color=%23aaaaaa'
+    icon: 'discord'
   },
   {
     name: 'WhatsApp',
     url: 'https://wa.me/6285816300442',
-    icon: 'https://api.iconify.design/fa6-brands:whatsapp.svg?color=%23aaaaaa'
+    icon: 'whatsapp'
   },
   {
     name: 'TikTok',
     url: 'https://www.tiktok.com/@yova_2501',
-    icon: 'https://api.iconify.design/fa6-brands:tiktok.svg?color=%23aaaaaa'
+    icon: 'tiktok'
   },
   {
     name: 'Instagram',
     url: 'https://www.instagram.com/vayyy_25/',
-    icon: 'https://api.iconify.design/fa6-brands:instagram.svg?color=%23aaaaaa'
+    icon: 'instagram'
   },
   {
     name: 'Email',
     url: 'mailto:vayyyofficial@gmail.com',
-    icon: 'https://api.iconify.design/fa6-solid:envelope.svg?color=%23aaaaaa'
+    icon: 'email'
   }
 ];
 
